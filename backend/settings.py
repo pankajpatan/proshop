@@ -26,7 +26,7 @@ SECRET_KEY = '-jaokx@5mkeg2ol=hh!w@vz8e=q=x5*ap)ywj)%_r@dfh!_4l&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','localhost' ,'https://proshoppankaj.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','localhost' ,'proshoppankaj.herokuapp.com']
 
 
 # Application definition
