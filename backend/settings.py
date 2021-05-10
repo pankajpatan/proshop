@@ -132,7 +132,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME':'proshop',
         'USER' : 'pankaj',
-        'PASSWORD': 'pankajpatan',
+        'PASSWORD': os.environ.get('DB_PASS'),
         'HOST' : 'proshop-1.c4bv7vx9pjen.us-east-2.rds.amazonaws.com',
         'PORT' : '5432'
     }
@@ -190,10 +190,10 @@ AWS_QUERYSTRING_AUTH = False
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
-AWS_ACCESS_KEY_ID =   'AKIAWOANW7PJTHL5EH4G' 
+AWS_ACCESS_KEY_ID =  os.environ.get('AWS_ACCESS_KEY_ID') 
 
 
-AWS_SECRET_ACCESS_KEY ='41mVoledpov3PEP3KpvIvJJDUz/hOZJ2TFv2dkXC'
+AWS_SECRET_ACCESS_KEY =os.environ.get('AWS_SECRET_ACCESS_KEY')
 
 AWS_STORAGE_BUCKET_NAME  = 'proshopbucket'  
 
